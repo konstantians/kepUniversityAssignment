@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B11008B-C859-49AF-A232-21CC97B22F61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KEPAssignment</RootNamespace>
+    <AssemblyName>KEPAssignment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActiveUser.cs" />
+    <Compile Include="AddCitizenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCitizenForm.Designer.cs">
+      <DependentUpon>AddCitizenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPetitionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPetitionForm.Designer.cs">
+      <DependentUpon>AddPetitionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CitizenDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitizenDetailsForm.Designer.cs">
+      <DependentUpon>CitizenDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomElements\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomElements\CustomCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomElements\CustomCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomElements\CustomComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomElements\CustomRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomElements\CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomElements\CustomTextBox.Designer.cs">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordMiniFormConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordMiniFormConfirmation.Designer.cs">
+      <DependentUpon>ForgotPasswordMiniFormConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PetitionDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PetitionDetailsForm.Designer.cs">
+      <DependentUpon>PetitionDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaticData.cs" />
+    <Compile Include="SubForms\CitizenCardView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\CitizenCardView.Designer.cs">
+      <DependentUpon>CitizenCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\CitizenFilterMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\CitizenFilterMenu.Designer.cs">
+      <DependentUpon>CitizenFilterMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\CitizenListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\CitizenListView.Designer.cs">
+      <DependentUpon>CitizenListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\PetitionCardView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\PetitionCardView.Designer.cs">
+      <DependentUpon>PetitionCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\PetitionListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\PetitionListView.Designer.cs">
+      <DependentUpon>PetitionListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPasswordForm.Designer.cs">
+      <DependentUpon>ResetPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCitizensForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCitizensForm.Designer.cs">
+      <DependentUpon>ViewCitizensForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPetitionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPetitionsForm.Designer.cs">
+      <DependentUpon>ViewPetitionsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCitizenForm.resx">
+      <DependentUpon>AddCitizenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPetitionForm.resx">
+      <DependentUpon>AddPetitionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CitizenDetailsForm.resx">
+      <DependentUpon>CitizenDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomElements\CustomTextBox.resx">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordMiniFormConfirmation.resx">
+      <DependentUpon>ForgotPasswordMiniFormConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PetitionDetailsForm.resx">
+      <DependentUpon>PetitionDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\CitizenCardView.resx">
+      <DependentUpon>CitizenCardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\CitizenFilterMenu.resx">
+      <DependentUpon>CitizenFilterMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\CitizenListView.resx">
+      <DependentUpon>CitizenListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\PetitionCardView.resx">
+      <DependentUpon>PetitionCardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\PetitionListView.resx">
+      <DependentUpon>PetitionListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPasswordForm.resx">
+      <DependentUpon>ResetPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCitizensForm.resx">
+      <DependentUpon>ViewCitizensForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPetitionsForm.resx">
+      <DependentUpon>ViewPetitionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{88864fa2-ca61-4499-8709-07c488575f72}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\blackMenuIcon.png" />
+    <Content Include="Icons\checkIcon.png" />
+    <Content Include="Icons\editIcon.png" />
+    <Content Include="Icons\group.png" />
+    <Content Include="Icons\home20.png" />
+    <Content Include="Icons\logout.png" />
+    <Content Include="Icons\menuIcon.png" />
+    <Content Include="Icons\petition.png" />
+    <Content Include="Icons\search.png" />
+    <Content Include="Icons\user.png" />
+    <Content Include="Images\Gov.gr_logo.png" />
+    <None Include="Resources\calendarDark.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
